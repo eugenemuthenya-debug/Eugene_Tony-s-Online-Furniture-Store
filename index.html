@@ -1,0 +1,316 @@
+<html>
+
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <style>
+        img:hover {
+            transition: 4s;
+            transform: scale(1.2)
+        }
+    </style>
+</head>
+
+<body style="background-color: bisque;">
+    <div class="container-fluid">
+        <!-- Section 1 (NAVIGATION BAR)-->
+        <section class="row">
+            <div class="col-md-12">
+                <!-- navbar-expand-md: will expand on large devices and collapse on small devices/devices lower than the specifications set -->
+                <nav class="navbar navbar-expand-md navbar-success bg-success">
+                    <!-- navbar-brand class:places the logo or the name of the website -->
+                    <a href="" class="navbar-brand p-4"><b>Tony's Online Furniture Store</b></a>
+                    <!-- navbar-toggler: only shows/visible when the navbar is collapsed -->
+                    <!-- data-bs-toggle="collapse":shows the button will hide/show something -->
+                    <!-- data-bs-target="#id": points/instructs which element should expand or collapse -->
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                        <!-- navbar-toggler-icon: this is just to place the humburger icon -->
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                    <!-- collapse: hides content on small devices(md-medium devices and below) -->
+                    <!-- navbar-collapse: aligns the navbar items/links-->
+                    <!-- id: connects the button so that when clicked it can toggle from expanded/collapse and viceversa -->
+                    <div class="collapse navbar-collapse" id="navbarcollapse">
+                        <!-- navbar-nav: ensures correct sapcing and alignmnet -->
+                        <div class="navbar-nav">
+                            <!-- nav-link: styling of individualised link and active shows the active link page -->
+                            <a href="index.html" class="nav-link active">Home</a>
+                            <a href="Living room.html" . class="nav-link">Living room</a>
+                            <a href="Kitchen.html" class="nav-link">Kitchen</a>
+                            <a href="Bedroom.html" class="nav-link">Bedroom</a>
+                            <a href="Newaddons.html" class="nav-link">New Add ons</a>
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- End of section 1 -->
+
+
+        <!-- Section 2 (Carousel)-->
+        <section class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+                    <!-- wrapper -->
+                    <!-- class:slide: allows the carousel items to be attached and slide together without leaving a blank background -->
+                    <div class="carousel-inner">
+                        <!-- Carousel items -->
+                        <!-- carousel-item active: the fisrt slide to move and is displayed first -->
+                        <div class="carousel-item active">
+                            <img src="images/Chair 1.jpg" alt="slide 1" class="w-100" height="400px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bedroom 2.jpg" alt="Slide 2" class="w-100" height="400px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/backyard.jpg" alt="Slide 3" class="w-100" height="400px">
+
+                        </div>
+
+                    </div>
+                    <!-- Controllers -->
+                    <!-- id=(#mycarousel)-tells the contoller which  carousel slide is being referred to -->
+                    <!-- data-bs-slide: tells the controller,when the button/control is clicked whether to move to the next slide or the previous one -->
+                    <!-- carousel-control-(prev/next):enables for proper positioning of the contols -->
+                    <!-- carousel-control-(next/prev)-icon :creates/shows an icon which allows user to move from one slide to another -->
+                    <a href="#mycarousel" data-bs-slide="prev" class="carousel-control-prev ">
+                        <span class="carousel-control-prev-icon bg-danger"></span>
+                    </a>
+                    <a href="#mycarousel" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon bg-danger"></span>
+                    </a>
+                </div>
+
+            </div><br>
+            <hr>
+
+        </section>
+        <!-- END OF SECTION 2(Carousel) -->
+
+        <!-- Section 3() -->
+        <h4 class="text-center" style="text-decoration: overline;">Welcome to Tony's Online Furniture Store</h4>
+        <div>
+            <form class="search-container text-center">
+                <input type="text" id="search bar" placeholder="Search our products">
+            </form>
+
+        </div>
+
+        <!--  -->
+        <p><b>Popular choices</b></p>
+
+        <!-- Section 4 (cards) -->
+        <section class="row">
+            <div class="col-md-3 text-center">
+                <div class="card shadow">
+                    <div class="card-header">
+                        The Living Room
+                    </div>
+                    <div class="card-body">
+                        <img src="images/living-room.jpg" alt="Living Decore" class="w-100 d-block">
+                    </div>
+                    <div class="card-footer">
+                        <p>We offer a variety of products to meet your livig room standards at affordable prices.</p>
+                        <h6 class="text-warning">Interested</h6>
+                        <a href="Living room.html"><input type="button" value="click here" class="btn btn-success"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- column 2 -->
+            <div class="col-md-3 text-center">
+                <div class="card shadow">
+                    <div class="card-header">
+                        Kitchen Reinovated
+                    </div>
+                    <div class="card-body">
+                        <img src="images/kitchen.jpg" alt="Kitchen Equipment" class="w-100 d-block">
+                    </div>
+                    <div class="card-footer">
+                        <p>Looking to style your kitchen,we've got you. The sight is immaculate.</p>
+                        <p class="text-warning">Hungry for taste</p>
+                        <a href="Kitchen.html"><input type="button" value="click here" class="btn btn-success"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-3 text-center">
+                <div class="card shadow">
+                    <div class="card-header">
+                        Bedroom Designs
+                    </div>
+                    <div class="card-body">
+                        <img src="images/bedroom.jpg" alt="" class="w-100 d-block">
+                    </div>
+                    <div class="card-footer">
+                        <p>How about making your sleep more comfortable,</p>
+                        <p class="text-warning">Adventure awaits</p>
+                        <a href="Bedroom.html"><input type="button" value="click here" class="btn btn-success"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- column 4 -->
+            <div class="col-md-3 text-center">
+                <div class="card shadow">
+                    <div class="card-header">
+                        Backyard Enhancements
+                    </div>
+                    <div class="card-body">
+                        <img src="images/backyard.jpg" alt="" class="w-100 d-block">
+                    </div>
+                    <div class="card-footer">
+                        <p>Just because its outside doesn't mean it can't be stlyed.Show it off</p>
+                        <p class="text-warning"> Explore more?</p>
+                        <input type="button" value="Click here" class="btn btn-success">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr><br>
+
+        <!-- END OF SECTION 2(cards) -->
+
+        <!-- Section 4 -->
+        <section class="row">
+            <h4 class="text-center" style="text-decoration: underline;">Our New Add ons/Must have</h4>
+            <p>Intoroducing our new products:</p>
+            <div class="col-md-6 text-center">
+                <dic class="card shadow">
+                    <div class="card-header">
+                        Home Office
+                    </div>
+                    <div class="card-body">
+                        <img src="images/workplace-5517744_1920.jpg" alt="Workplace" class="w-100 d-block">
+                    </div>
+
+            </div>
+
+            <!-- column 2 -->
+            <div class="col-md-6 text-center">
+                <p>Introducing our new home offie section complete with lovable designs that will make you leave your
+                    office and work at home.Complete with modern desks for comfortability and one can customize
+                    according to user prefference,its all upto you. Our online furniture store offers a wide range of
+                    home office solutions that combine functionality with modern style, helping you create a workspace
+                    that fits your needs and your home. From ergonomic desks and supportive chairs to smart storage and
+                    lighting options, each piece is thoughtfully selected to enhance efficiency while complementing your
+                    interior design.</p>
+                    <span class="badge bg-warning btn-lg" >Coming soon</span><br><br>
+                    <input type="submit" value="Pre-register " class="bg-dark btn btn-dark"> &nbsp;
+                <a href="Newaddons.html"><input type="button" value="Click here" class="btn btn-success"></a><br><br>
+                <input type="email" placeholder="Enter your Email"><br>
+                <p><i style="font-size: x-small
+                ">You will receive notification when product is out</i></p>
+            </div>
+    </div><br>
+
+    <!-- Marqueee -->
+    <div>
+        <marquee behavior="" direction="" class="bg-dark text-light">Upto 50%OFF within 1<sup>ST</sup>month</marquee>
+    </div>
+    </section><br>
+
+
+    <!--  -->
+    <section class="row">
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <div class="card-header">
+                    Playhouses
+                </div>
+                <div class="card-body">
+                    <img src="images/playhouse.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="card-footer">
+                    <p class="text-warning">30%OFF First sale</p>
+                    <a href="Newaddons.html"><input type="button" value="Click here" class="btn btn-success"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <div class="card-header">
+                    Home Decore
+                </div>
+                <div class="card-body"><img src="images/rug.jpg" alt="" class="w-100 d-block"></div>
+                <div class="card-footer">
+                    <p class="text-warning">50%OFF First sale</p>
+                    <a href="Newaddons.html"><input type="button" value="Click here" class="btn btn-success"></a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- column 3 -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <div class="card-header">
+                    Mattress and Pillows
+                </div>
+                <div class="card-body">
+                    <img src="images/MP1.jpg" alt="" class="w-100 d-block">
+
+                </div>
+                <div class="card-footer">
+                    <p class="text-warning">40%OFF First sale</p>
+                    <a href="Newaddons.html"><input type="button" value="Click here" class="btn btn-success"></a>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+
+
+
+    <!-- Section footer -->
+    <section class="row bg-success text-light p-4">
+        <div class="col-md-4">
+            <h3 class="text-center">About us</h3>
+            <p>At Tony's, we believe your home should be a reflection of who you are. We've curated a collection of
+                modern furniture that balances form, function, and flair. By cutting out the middleman, we bring
+                designer-quality pieces directly to your door—minus the showroom markup. From the first sketch to the
+                final stitch, our mission is simple: to help you create a space you're proud to call home.</p>
+
+        </div>
+
+        <!-- column 2 -->
+        <div class="col-md-4">
+            <h4 class="text-center">Contact Us</h4>
+            <form action="">
+                <input type="email" placeholder="Enter your Email" class="form-control" required><br><br>
+                <textarea name="" id="" placeholder="leave a comment" class="form-control"></textarea><br><br>
+                <input type="submit" value="Send a message" class="btn btn-dark">
+
+            </form>
+        </div>
+
+        <!-- column 3 -->
+        <div class="col-md-4 text-center">
+            <h4 class="text-center">Let's grow together. Stay in touch</h4>
+            <a href="https://www.facebook.com"><img src="images/fb.png" alt=""></a>
+            <a href="https://www.instagram.com"><img src="images/in.png" alt=""></a>
+            <a href="https://www.x.com"><img src="images/x.png" alt=""></a>
+            <p class="mt-3">See it in the wild. Join our community</p>
+        </div>
+
+    </section>
+    <!-- END OF SECTION FOOTER-->
+
+
+
+    </div>
+
+
+</body>
+
+</html>
